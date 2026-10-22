@@ -5,7 +5,7 @@ import Blur from '../../atomes/Blur.vue';
 </script>
 
 <template>
-    <section class="max-w-300 mx-auto w-full min-h-screen md:pt-[65px] flex flex-col items-start justify-start gap-[65px]">
+    <section class="max-w-300 mx-auto w-full min-h-screen md:pt-[65px] md:pb-[100px] flex flex-col items-start justify-start gap-[65px]">
         <h2 class="max-w-[451px] inter-bold text-[54px] leading-[56px] tracking-[-2%]">Du profil candidat à la shortlist.</h2>
         <div class="flex flex-col w-full gap-[52px]">
             <div class="w-full h-[474px] rounded-[20px] overflow-hidden bg-sun-yellow/10 pt-7 px-7 flex items-end justify-between gap-20 relative">
@@ -31,6 +31,10 @@ import Blur from '../../atomes/Blur.vue';
                 <div class="max-w-[522px] w-full h-full flex flex-col items-start justify-center gap-4">
                     <h3 class="inter-bold text-[26px] leading-8 tracking-[-2%]">Examinez les compétences</h3>
                     <p class="max-w-[522px] inter-medium text-[20px] leading-[32px] tracking-[-2%]">Consultez les compétences déclarées et les résultats des évaluations disponibles.</p>
+                                       <div class="flex items-center justify-start gap-[-2px]">
+                        <div class="h-10 w-10 rounded-full border border-2 bg-smart-green flex items-center justify-center"><img src="/without-myloops-character.png" class="h-6 w-auto" alt="Without myloops character"></div>
+                        <div class="h-10 w-10 rounded-full border bg-black flex items-center justify-center"><img src="/arrow-right.png" alt="Arrow right"></div>
+                    </div>
                 </div>
 <img src="/shortlist/identifications.png" class="" alt="Identifications des profils">
                 <Blur/>
