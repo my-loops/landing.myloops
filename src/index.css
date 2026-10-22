@@ -2,4 +2,6 @@
 
 @theme {
     --color-edu-blue: oklch(62.3% 0.203 255.1); /* education blue*/
+    --color-sun-yellow: oklch(72.8% 0.161 61.8);
+    --color-smart-green: oklch(74.6% 0.192 140.5);
 }

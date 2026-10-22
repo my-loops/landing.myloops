@@ -1,11 +1,13 @@
 <script setup lang="ts">
+import functionnalities from '../../../constants/functionnalities.const.ts';
 import Blur from '../../atomes/Blur.vue';
+import FunctionnalityCard from '../../molecules/FunctionnalityCard.vue';
 
     
 </script>
 
 <template>
-    <section class="max-w-300 mx-auto w-full min-h-screen md:pt-[65px] flex flex-col items-start justify-start gap-[65px]">
+    <section class="max-w-300 mx-auto w-full min-h-screen md:pt-[65px] md:pb-[100px] flex flex-col items-start justify-start gap-[65px]">
         <h2 class="max-w-[787px] inter-bold text-[54px] leading-[56px] tracking-[-2%]">Le bon candidat ne devrait pas être plus difficile à trouver.</h2>
         <div class="flex flex-col w-full gap-11">
                     <div class="flex items-center justify-center gap-11 w-full">
@@ -50,7 +52,7 @@ import Blur from '../../atomes/Blur.vue';
                 <div class="flex flex-col gap-4 items-start justify-start ">
             <div class="inter-medium text-[16px] leading-[24px] tracking-[-2%] text-black/60">Découvrir quoi d’autres vous pouvez faire avec Myloops</div>
             <div class="flex flex-wrap gap-3 items-start justify-start">
-                
+                <FunctionnalityCard v-for="(functionnality, index) in functionnalities" :icon="functionnality.icon" :name="functionnality.name" :link="functionnality.link" :key="index"/>
             </div>
         </div>
         </div>
