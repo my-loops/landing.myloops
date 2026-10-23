@@ -3,7 +3,7 @@ import type { linkButtonType } from "../types/button.type";
 export const navLinks : linkButtonType[] = [
     {
         active: true,
-        link: "/recruteur",
+        link: "/recruteurs",
         content: "Recruteurs"
     },
     {
@@ -18,7 +18,7 @@ export const navLinks : linkButtonType[] = [
     },
     {
         active: false,
-        link: "/faq",
+        link: "/faqs",
         content: "Faq"
     },
 ]
